@@ -16,7 +16,7 @@
 		}
 		th, td {
 			text-align: center;
-			padding: 8px;
+			padding: 10px;
 		}	
 		tr:nth-child(even){background-color: #99CCFF}
 			
@@ -24,11 +24,12 @@
 			background-color: #0066FF;
 			color: white;
 			padding: 4px;
+			width: 5%;
 		}
 		td {
 			color: black;
 		}
-		h2 {margin-left: 20%;
+		h2 {margin-left: 45%;
 		}
 		</style>
 		

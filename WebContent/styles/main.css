@@ -50,6 +50,13 @@ ul {
   width: 100%;
 }
 
+#register-form select {
+  border: none;
+  display: block;
+  width: 100%;
+  
+}
+
 #register-form button {
   cursor: pointer;
   float: right;

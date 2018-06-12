@@ -76,8 +76,8 @@ public class Register extends HttpServlet {
         String address2 = req.getParameter("address2");
         String city = req.getParameter("city");
         String state = req.getParameter("state");
-        String zipCodeStr = req.getParameter("zipCode");
-        int zipCode = Integer.parseInt(zipCodeStr);
+        String zipCodeStr = req.getParameter("zipCode"); 
+        int zipCode = Integer.parseInt(zipCodeStr);      
         String country = req.getParameter("country");
 
         MySQLConnection dbconnect = new MySQLConnection();

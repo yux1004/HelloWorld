@@ -10,23 +10,47 @@
 			text-align: center;
 			padding: 5px;
 		}		
-
+		select {
+			text-align: center;
+			padding: 10px;
+		}
 		</style>
 	</head>
 	<body>	
+	<h2 align = center>REGISTER</h2>
 		<section class="main-section">
 			<div id="register-form">
 				<form action="register" method="Post">
-					First name:<br> <input type="text" name="firstname"> <br>
-					Last name:<br> <input type="text" name="lastname"> <br>
+					First name:<br> <input type="text" name="firstname" required="required"> <br>
+					Last name:<br> <input type="text" name="lastname" required="required"> <br>
 			
-					Address1:<br> <input type="text" name="address1"> <br>
+					Address1:<br> <input type="text" name="address1" required="required"> <br>
 					Address2:<br> <input type="text" name="address2"> <br>
 			
-					City:<br> <input type="text" name="city"> <br>
-					State:<br> <input type="text" name="state"> <br>
-					ZipCode:<br> <input type="text" name="zipCode"> <br>
-					Country:<br> <input type="text" name="country"> <br>
+					City:<br> <input type="text" name="city" required="required"> <br>
+					<!-- State:<br> <input type="text" name="state"> <br> -->
+					State:<br>
+					<select name = "state"> 
+						<option value ="AL">AL</option> 
+						<option value ="AK">AK</option>
+						<option value ="CA">CA</option>
+						<option value ="FL">FL</option> 
+						<option value ="IL">IL</option> 
+						<option value ="IA">IA</option> 
+						<option value ="LA">LA</option> 
+						<option value ="ME">ME</option>
+						<option value ="MI">MI</option>
+						<option value ="NY">NY</option>
+						<option value ="NC">NC</option> 
+						<option value ="PA">PA</option> 
+						<option value ="TX">TX</option> 
+						<option value ="WI">WI</option> 
+					</select> 
+					<br><br> 
+					<!-- ZipCode:<br> <input type="text" name="zipCode"> <br> -->
+					ZipCode:<br> <input type="text" pattern="\d{5}" name="zipCode" required="required"> <br> 
+<!-- 					Country:<br> <input type="text" name="country"> <br> -->
+ 					Country:<br><select name = "country"> <option value ="US">US</option> </select> <br>
 			
 					<br> <input type="submit" value="Submit">
 				</form>
