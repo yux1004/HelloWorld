@@ -1,7 +1,8 @@
 # HelloWorld
 for HelloWorld
-url:
+Fixed the bug of unsorted report. I forgot to sort it by id/date for the admin report.
 
+url:
 For Register: http://18.236.79.39:8080/HelloWorld/
 For Amdin Report: http://18.236.79.39:8080/HelloWorld/admin
 
