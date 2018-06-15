@@ -106,7 +106,7 @@ public class MySQLConnection implements DBConnection {
         }
         ArrayList<Person> list = new ArrayList<Person>();
         try {
-            String sql = "SELECT * FROM persons";
+            String sql = "SELECT * FROM persons WHERE 1 ORDER BY date";
             PreparedStatement statement = conn.prepareStatement(sql);
             ResultSet rs = statement.executeQuery();
             PersonBuilder builder = new PersonBuilder();
